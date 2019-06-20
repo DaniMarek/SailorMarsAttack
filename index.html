@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mars, Attack!</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<div id="game-table">
+		<div id="gameboard"></div>	
+		<div id="game_stats">
+			<div id="left-stat"><h4># of Clicks: <span id="no-of-clicks">0 </span></h4></div>
+			<div id="right-stat"><h4> Correct Guesses: <span id="correct-guess">0</span></h4></div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="game-msg">
+		<div class="congrats-msg">Congratulations, you defeated the Monsters!</div>
+		<button id="btnRestart" type="button">Restart</button>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="functions.js"></script>
+</body>
+</html>

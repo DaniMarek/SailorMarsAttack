@@ -1,0 +1,211 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	/*background-color: black;*/
+}
+
+#game-table{
+	background-image: url("img/Starry_sky_1.png");
+	background-size: cover;
+	margin:0;
+	text-align: left;
+/*	width: 1192px;
+	height: 740px;*/
+	width: 100%;
+	/*border: solid 1px black;*/
+	/*height: 385px;*/
+	position: relative;
+	/*padding: 150px 0px;*/
+}
+
+#gameboard{
+	width: 1015px;
+	border: 15px;
+	padding: 0px 124px 0px 150px;
+
+}
+
+#game_stats{
+	margin:0 auto;
+	text-align: left;
+	width: 612px;
+	margin-top: 690px;
+	background-color: black;
+	color: red;
+}
+#left-stat, #right-stat{
+	float: left;
+}
+
+#right-stat{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+.tile-picture{
+	float: left;
+	width: 120px;
+	height: 150px;
+	margin: 5px;
+	border: solid 2px #FFF200;
+	display: none;
+}
+
+.tile-picture > img{
+	margin: 0;
+	width: 156px;
+	height: 151px;
+}
+
+.tile-cover-container{
+	position: absolute;
+	/*margin-top: ;*/
+	/*width: 100%;*/
+	width: 1015px;
+	border: 15px;
+	padding: 20px 20px 20px 147px;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.tile-cover{
+	width: 125px;
+	height: 163px;
+	margin: 3px 4px 6px 5px;
+	/*border: solid 2px white;*/
+	background-image: url("img/sailormars.png");
+	background-size: cover;
+	float: left;
+	cursor: pointer;
+}
+
+#game-msg{
+	margin: 0 auto;
+	font-size: 20px;
+	background-image: url("img/gold.jpg");
+	color: red;
+	padding: 15px;
+	border: solid 1px black;
+	border-radius: 5px;
+	width: 612px;
+	display:none;
+}
+
+#btnRestart{
+	padding: 15px;
+	font-weight: bold;
+	text-align: center;
+	background: red;
+	color: white;
+	text-decoration: uppercase;
+	margin-top: 20px;
+	border:none;
+	border-radius: 5px;
+}
+
+
+/*If screen size is no larger than 640px*/
+@media (max-width: 640px){
+	#game-table{
+		width: 100%;
+		/*height:;*/
+	}
+
+	.tile-picture, .tile-picture > img, .cover{
+		width: 75px;
+		height: 56px;
+	}
+
+	.tile-cover{
+		background:url("img/sailormars.png");
+	}
+
+	#game_stats{
+		margin-top: 20px;
+	}
+
+	#game-msg, #game_stats{
+		width: 385px;
+	}
+}
+
+/*If screen size is no larger than 320px*/
+@media (max-width: 320px){
+	#game-table{
+		width: 156px;
+		height: 390px;
+	}
+
+	.tile-picture, .tile-picture > img, .tile-cover{
+		width: 50px;
+		height: 38px;
+	}
+
+	.tile-cover{
+		background: url(img/sailormars.png) no-repeat;
+	}
+
+	#game_stats{
+		margin-top: 20px;
+	}
+
+	#game-msg, #game_stats{
+		width: 156px;
+	}
+	/*this is where you left off*/
+
+	#left-stat, #right-stat{
+		float: none;
+	}
+
+}
+
+@media screen and (min-width: 768px){
+    #game-table{
+		margin-left: 0px;
+		padding: 20px 0px;
+	}
+
+	#game-table img{
+		margin: 16px 11px;
+	}
+}
+
+/* Desktops and laptops ---------- */
+@media screen and (min-width: 1224px)
+{
+    #game-table{
+	    width: 1356px;
+		height: 700px;
+		/*padding: 20px;*/
+		text-align: center;
+		vertical-align: top;
+		/*margin-left: 4%;*/
+	}
+
+	#game-table img{
+		width: 117px;
+		height: 146px;
+		margin: 0;
+	}
+
+	.tile-cover{
+	width: 125px;
+	height: 156px;
+	background-image: url("img/sailormars.png");
+	background-size: cover;
+	float: left;
+	cursor: pointer;
+}
+
+}
+/* Large screens ---------- */
+/*@media screen and (min-width: 1824px){*/
+    /* styles */
+/*}*/
+
